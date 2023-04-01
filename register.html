@@ -1,0 +1,73 @@
+<!--
+  _
+ | |
+ | | _____  _   _ _   _   ___ _ __   __ _  ___ ___ 
+ | |/ / _ \| | | | | | | / __| '_ \ / _` |/ __/ _ \
+ |   < (_) | |_| | |_| |_\__ \ |_) | (_| | (_|  __/
+ |_|\_\___/ \__, |\__,_(_)___/ .__/ \__,_|\___\___|
+             __/ |           | |
+            |___/            |_|     © {{year}}. All rights reserved.
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>koyu.space Matrix - Create account</title>
+        <style>
+            input,
+            label {
+                width: 250px;
+            }
+            label {
+                display: inline;
+                margin-left: 48px;
+                margin-right: 48px;
+            }
+            input[type="password"] {
+                margin-left: -31px;
+            }
+            input[type="submit"] {
+                width: 373px;
+                height: 48px;
+                margin-top: 8px;
+                margin-left: 10%;
+            }
+            form {
+                width: 480px;
+                margin: 0 auto;
+                margin-top: 32px;
+            }
+            body {
+                font-family: serif;
+                background: #fff;
+                color: #000;
+                display: block;
+                width: 35%;
+                margin: 0 auto;
+            }
+            h1, #content {
+                text-align: center;
+            }
+            small {
+                width: 35%;
+                display: block;
+                margin: 0 auto;
+                margin-left: 264px;
+                margin-top: 90px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Create a Matrix account</h1>
+        <div id="content">
+            <p>Login with your <a href="https://koyu.space/about" target="_blank">koyu.space</a> credentials below. Once you have been registered on our server login with your koyu.space username (not e-mail) and password. Please make sure you disable 2FA before using this form or you will get an error.</p>
+        </div>
+        <form method="POST" action="/post">
+            <p><label for="email">Email:</label> <input type="email" name="email" id="email"></p>
+            <p><label for="password">Password:</label> <input type="password" name="password" id="password"></p>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+        <small>&copy; koyu.space {{year}}</small>
+    </body>
+</html>
